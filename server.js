@@ -13,6 +13,7 @@ app.use(cors());
 
 app.post("/payment", async (req, res) => {
   const { amount } = req.body;
+  console.log(amount);
   try {
     const paymentIntent = await stripe.paymentIntents.create({
       amount,
