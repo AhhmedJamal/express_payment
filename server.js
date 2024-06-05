@@ -27,4 +27,4 @@ app.post("/payment", async (req, res) => {
   }
 });
 
-app.listen(3001, () => console.log("Server running on port 3001"));
+app.listen(3000, () => console.log("Server running on port 3000"));
