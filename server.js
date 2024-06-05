@@ -10,7 +10,7 @@ const stripe = Stripe(
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("/create-payment-intent", async (req, res) => {
+app.post("/payment", async (req, res) => {
   const { amount } = req.body;
 
   try {
