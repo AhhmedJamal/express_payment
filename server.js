@@ -4,7 +4,9 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 const app = express();
-const stripe = Stripe("your-secret-key-here");
+const stripe = Stripe(
+  "sk_test_51Oa7BfHIYZ0Ho4vpxjDD2XmRNXFEgSZiTOkHdy98pMVTCDZsef8Vx1fIfA3x3O2OOo2fXksyhXAq8TeTWgWHiyDc00SNO7TMAE"
+);
 
 app.use(bodyParser.json());
 app.use(cors());
